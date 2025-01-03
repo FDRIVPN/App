@@ -32,7 +32,7 @@
             font-size: 20px;
             font-weight: bold;
             color: black;
-            text-decoration: none;
+            cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
         }
@@ -49,5 +49,19 @@
         }
     </style>
 </head>
+<body>
+    <div class="container">
+        <h1>به سایت ما خوش آمدید</h1>
+        <div class="button" onclick="navigateToPage(1)">تازه وارد</div>
+        <div class="button" onclick="navigateToPage(2)">متوسط</div>
+        <div class="button" onclick="navigateToPage(3)">حرفه‌ای</div>
+    </div>
+
+    <script>
+        // جاوااسکریپت برای هدایت کاربر به صفحات مختلف
+        function navigateToPage(pageNumber) {
+            window.location.href = `${pageNumber}.html`;
+        }
+    </script>
 </body>
 </html>
